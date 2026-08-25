@@ -61,8 +61,8 @@ async function handleSubmit(request, env) {
     body: JSON.stringify({
       from: env.FROM_ADDRESS,
       to: [email],
-      subject: "5.A",
-      text: "5.A",
+      subject: "Darker Yet Darker...",
+      text: "I wonder what the end of this month will yield...5.A?",
     }),
   });
 
