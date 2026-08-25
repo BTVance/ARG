@@ -12,7 +12,7 @@
 //   FROM_ADDRESS         e.g. "W.D. Gaster <gaster@yourdomain.com>"
 //   TURNSTILE_SECRET_KEY optional — omit to skip the bot check entirely
 
-const CORRECT_CODE = "AUG30";
+const CORRECT_CODE = "ROCKCANDY";
 
 export async function onRequestPost(context) {
   const { request, env } = context;
