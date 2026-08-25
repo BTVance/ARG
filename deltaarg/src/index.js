@@ -5,7 +5,7 @@
 // It handles /api/submit itself and hands every other request off to the
 // static files in public/ via the ASSETS binding.
 
-const CORRECT_CODE = "AUG30";
+const CORRECT_CODE = "ROCKCANDY";
 
 export default {
   async fetch(request, env, ctx) {
