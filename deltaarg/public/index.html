@@ -107,14 +107,7 @@
     <input type="email" id="email" name="email" placeholder="email" required>
     <input type="text" id="response" name="response" placeholder="response" required>
 
-    <!--
-      Cloudflare Turnstile (free bot check) — replace YOUR_TURNSTILE_SITE_KEY
-      below with the site key from your Cloudflare dashboard. If you don't
-      want it, delete this div and the two <script> lines that reference
-      Turnstile, then remove the "disabled" attribute from the button below.
-      See the README for why this is worth keeping if the link ever leaves
-      a small trusted group.
-    -->
+    
     <div class="cf-turnstile" data-sitekey="0x4AAAAAAEbAF_kMewaqRlZT" data-callback="onTurnstileSuccess"></div>
 
     <button type="submit" id="submit-btn" disabled>enter</button>
@@ -154,7 +147,7 @@
         });
         const data = await res.json();
 
-        statusEl.textContent = data.ok ? 'check your email.' : '. . .';
+        statusEl.textContent = data.ok ? 'What are you looking for, I wonder?' : '. . .';
       } catch (err) {
         statusEl.textContent = 'Very interesting indeed.';
       } finally {
